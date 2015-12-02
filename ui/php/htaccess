@@ -1,0 +1,18 @@
+# Authorization
+AuthName "digikakkara"
+AuthType Basic
+AuthUserFile /var/www/fs2/37/hahmotaf/budjettipeli/.htpasswd
+Require valid-user
+
+# Routing: Define the public URLs
+
+RewriteEngine on
+RewriteRule ^hello$ hello.php
+RewriteRule ^budjetti/(.+)$ get_stored_budget.php?id=$1
+RewriteRule ^api/new_budget$ new_budget.php
+
+# Protect contents.json, containing the listing of all files
+<Files ./contents.json>
+Order Allow,Deny
+Deny from all
+</Files>

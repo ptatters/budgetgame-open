@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "MD5": "^1.2.1",
+    "base32": "^0.0.6",
+    "body-parser": "^1.12.2",
+    "express": "^4.12.3",
+    "fs-extra": "^0.18.0",
+    "html-minifier": "^0.7.0",
+    "html5-lint": "^0.2.5",
+    "htmltidy": "^0.0.6",
+    "jsftp": "^1.5.1",
+    "merge": "^1.2.0",
+    "mkdirp": "^0.5.0",
+    "morgan": "^1.5.2",
+    "nedb": "^1.1.1",
+    "optimist": "^0.6.1",
+    "prompt": "^0.2.14",
+    "q": "^1.2.0",
+    "secure-random": "^1.1.1",
+    "tmp": "0.0.25",
+    "uglify-js": "^2.4.19",
+    "underscore": "^1.8.2"
+  },
+  "devDependencies": {
+    "deepcopy": "^0.5.0"
+  }
+}

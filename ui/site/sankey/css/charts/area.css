@@ -1,0 +1,27 @@
+#area_svg {
+	
+  font: 10px "Roboto";
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.area {
+  fill: steelblue;
+}
+.area_rect {
+	fill: none;
+	stroke: lightblue;
+	stroke-width: 1px;
+}
+
+.line {
+	fill: none;
+	stroke-width: 2px;
+	stroke-dasharray: 3px 3px;
+	stroke: red;
+}

@@ -1,0 +1,152 @@
+<!-- question view templates. One div with class question-view for each
+     separate view. Each view has unique id attribute.
+-->
+<div class="question-templates expense-question-templates" style="display:none">
+
+    <!-- - - YLEINEN JULKISHALLINTO - - - - - - - - - - - - - - - - - - -->
+    <div class="question-view" id="julkishallinto">
+        <h3 class="question-title">Yleinen julkishallinto</h3>
+
+        <div class="left-column">
+            <h5>Nykyisten rahoitusperiaatteiden mukainen kehitys</h5>
+            <p style="margin-top:0">Valitsemasi BKT-kasvuennuste vaikuttaa ao. pylväsdiagrammiin, mutta valitsemasi rahoitusperiaatteet, sopeuttamistoimet ja työrurien pituus eivät vaikuta.</p>
+            <div id="bars-placehholder" style="background:#eee;height:180px;margin-top:10px;color:#ccc">placeholder for bar chart</div>
+
+            <div class="question-pane">
+                <h4>Ota kantaa kevään 2015 hallitusohjelman sopeuttamistoimiin
+                    <!--<a class="info-link" href="."></a>--></h4>
+
+                <div class="question checkbox" id="q-saasto-toimintamenoista">
+                    <h5>Säästö toimintamenoista
+                    </h5>
+                    <p>
+                        Hallintomenoissa säästetään tehtäviä ja velvoitteita purkamalla, toimitiloista luopumalla ja henkilöstömenoissa eläkepoistumaa hyödyntämällä. Lisätään digitalisaatiota ja uudistetaan rakenteita.
+                    </p>
+                    <div class="json-data">
+                        { "target": "julkishallinto",
+                          "effects": -102 }
+                    </div>
+                </div>
+
+                <div class="question checkbox" id="q-sakkotulot-paivasakkojen-korottaminen">
+                    <h5>Sakkotulot, päiväsakkojen korottaminen (12.39.01)
+                    </h5>
+                    <p>
+                        Muutetaan L 808/2007 siten, että ko. laissa päiväsakon rahamääränä pidetään yhtä kolmas-kymmenesosaa sakotettavan keskimääräisestä kuukausitulosta. Eli sakot kaksinkertaistuisivat.
+                    </p>
+                    <div class="json-data">
+                        { "target": "julkishallinto",
+                          "effects": {
+                            "20-74" : -61.50
+                        } }
+                    </div>
+                </div>
+
+                <div class="question checkbox" id="q-valtion-toimitilamenojen-vahentaminen">
+                    <h5>Valtion toimitilamenojen vähentäminen
+                    </h5>
+                    <p>
+                        Senaatti-kiinteistöjen investointivaltuutta rajataan siten, että vuokriin aiheutuu pysyvä 30 milj. euron vähennys.
+                    </p>
+                    <div class="json-data">
+                        { "target": "julkishallinto",
+                          "effects": -23.5 }
+                    </div>
+                </div>
+
+                <div class="question checkbox"
+                        id="q-sakkotulot-ja-tulot-hallinnollisista-maksuseuraamuksista">
+                    <h5>Sakkotulot ja tulot hallinnollisista maksuseuraamuksista (12.39.01)
+                    </h5>
+                    <p>
+                        Muutetaan L 756/2010, siten että ko. laissa eri rikesakkojen määrä kaksinkertaistetaan ja nostetaan yläraja 115 eurosta 230 euroon sekä liitännäisen menettämisseuraamuksen yläraja 1000 eurosta 2000 euroon.
+                    </p>
+                    <div class="json-data">
+                        { "target": "julkishallinto",
+                          "effects": {
+                            "20-69" : -20
+                        } }
+                    </div>
+                </div>
+
+                 <div class="question checkbox"
+                        id="q-yleinen-julkishallinto-rakenteelliset-muutokseet">
+                    <h5>Rakenteelliset muutokset
+                    </h5>
+                    <p>
+                        Luken ja Syken yhdistäminen, maataloustukihallinnon siirtyminen 3-portaiseksi, tukivalvonnan riskiperusteisuus, luopumistuen lopettaminen.
+                    </p>
+                    <div class="json-data">
+                        { "target": "julkishallinto",
+                          "effects": {
+                            "20-69" : -20
+                        } }
+                    </div>
+                </div>
+
+                 <div class="question checkbox"
+                        id="q-yleinen-julkishallinto-leikkauksia-hallinnosta">
+                    <h5>Leikkauksia hallinnosta
+                    </h5>
+                    <p>
+                        Ministeriö, ruokaketju, Evira, Metsäkeskus, kiinteistötoimitukset
+                    </p>
+                    <div class="json-data">
+                        { "target": "julkishallinto",
+                          "effects": -12 }
+                    </div>
+                </div>
+
+                 <div class="question checkbox"
+                        id="q-taloushallinnon-hankinnasta-maksuun-tulosten-toimeenpano">
+                    <h5>Taloushallinnon hankinnasta-maksuun -kehittämisprojektin
+                        tuotosten toimeenpano kaikissa kirjanpitoyksiköissä
+                    </h5>
+                    <p>
+                        Toteutetaan Valtiokonttorin hankinnasta maksuun prosessialueen kehittämisprojekin tuotosten käyttöönotto kaikissa kirjanpitoyksiköissä Valtiokonttorin, Palkeiden ja HAUS:n toimesta.
+                    </p>
+                    <div class="json-data">
+                        { "target": "julkishallinto",
+                          "effects": -12 }
+                    </div>
+                </div>
+
+                <div class="question checkbox"
+                        id="q-poliittinen-toiminta">
+                    <h5>Poliittinen toiminta
+                    </h5>
+                    <p>
+                        Ministerien, valtiosihteerien, erityisavustajien ja hallinnollisten avustajien palkkaukset ja toimintamenot, puoluetoiminnan tukeminen, muu poliittinen toiminta.
+                    </p>
+                    <div class="json-data">
+                        { "target": "julkishallinto",
+                          "effects": {
+                            "15-90+" : -5
+                        } }
+                    </div>
+                </div>
+
+                <div class="question checkbox"
+                        id="q-kirjanpitoyksikoiden-siirto-palkeiden-tehtavaksi">
+                    <h5>Kirjanpitoyksiköiden kirjanpidon ja tilinpäätöksen siirto kokonaisuudessaan Palkeiden lakisääteiseksi tehtäväksi
+                    </h5>
+                    <p>
+                        Talousarviolakia muutetaan  niin, että Palkeet vastaa kirjanpitoyksiköiden kirjanpidosta ja tilinpäätöksestä lakisääteisesti.
+                    </p>
+                    <div class="json-data">
+                        { "target": "julkishallinto",
+                          "effects": -3.2 }
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-column">
+            <h5>Luo oma ratkaisusi </h5>
+            <p style="margin-top:0">Rahoitusperiaatteet sovelletaan vuosittain aikavälillä 2016–2025<br>&nbsp;</p>
+            <div class="column-chart effects-chart"></div>
+            <h5>Keskustele aiheesta Facebookissa</h5>
+        </div>
+    </div>
+
+</div>

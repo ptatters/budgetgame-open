@@ -1,0 +1,13 @@
+.ui_screen_cont {
+	
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.ui_screen {
+	position: relative;
+	width: 100%:
+	height: auto;
+	
+	border-bottom: 1px solid grey;
+}

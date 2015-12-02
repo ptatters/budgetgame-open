@@ -1,0 +1,553 @@
+<!-- question view templates. One div with class question-view for each
+     separate view. Each view has unique id attribute.
+-->
+<div class="question-templates expense-question-templates" style="display:none">
+
+    <!-- - - ELÄKKEET  - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <div class="question-view" id="elakkeet">
+        <h3 class="question-title">Eläkkeet</h3>
+
+        <div class="left-column">
+            <h5>Nykyisten rahoitusperiaatteiden mukainen kehitys</h5>
+            <p style="margin-top:0">Valitsemasi BKT-kasvuennuste vaikuttaa ao. pylväsdiagrammiin, mutta valitsemasi rahoitusperiaatteet, sopeuttamistoimet ja työrurien pituus eivät vaikuta.</p>
+            <div id="bars-placehholder" style="background:#eee;height:180px;margin-top:10px;color:#ccc">placeholder for bar chart</div>
+ 
+            <div class="question-pane">
+                <h4>Ota kantaa kevään 2015 hallitusohjelman sopeuttamistoimiin
+                    <!--<a class="info-link" href="."></a>--></h4>
+
+                <div class="question checkbox" id="q-indeksikorotusten-muutos">
+                    <h5>Indeksikorotusten muutos
+                    </h5>
+                    <p>
+                        KEL/KHI-perusteiset indeksikorotukset jätetään toteuttamatta v. 2016. Tämän jälkeen korotukset tehdään oletetun äärimaltillisen palkkaratkaisun mukaisesti 2017-2019.
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "60-90+" : -205.8 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-elakelaisten-asumistuki">
+                    <h5>Eläkeläisten asumistuki
+                    </h5>
+                    <p>
+                        Eläkeläisten asumistuki sopeutetaan vastaamaan yleistä asumistukea eli järjestelmät yhdistetään.
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "60-90+" : -114.7 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-takuuelake">
+                    <h5>Takuueläke
+                    </h5>
+                    <p>
+                        Takuueläkkeen tasokorotus 30 M€
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "60-90+" : -30 } }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h5>Luo oma ratkaisusi </h5>
+            <p style="margin-top:0">Rahoitusperiaatteet sovelletaan vuosittain aikavälillä 2016–2025<br>&nbsp;</p>
+            <div class="column-chart effects-chart"></div>
+            <table class="bar-control"></table>
+            <h5>Keskustele aiheesta Facebookissa</h5>
+        </div>
+    </div>
+
+
+    <!-- - - TYÖTTÖMYYS  - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <div class="question-view" id="tyottomyys">
+        <h3 class="question-title">Työttömyys</h3>
+
+        <div class="left-column">
+            <h5>Nykyisten rahoitusperiaatteiden mukainen kehitys</h5>
+            <p style="margin-top:0">Valitsemasi BKT-kasvuennuste vaikuttaa ao. pylväsdiagrammiin, mutta valitsemasi rahoitusperiaatteet, sopeuttamistoimet ja työrurien pituus eivät vaikuta.</p>
+            <div id="bars-placehholder" style="background:#eee;height:180px;margin-top:10px;color:#ccc">placeholder for bar chart</div>
+ 
+            <div class="question-pane">
+                <h4>Ota kantaa kevään 2015 hallitusohjelman sopeuttamistoimiin
+                    <!--<a class="info-link" href="."></a>--></h4>
+
+                <div class="question checkbox" id="q-tyottomyysturva-ja-vuorotteluvapaa">
+                    <h5>Työttömyysturva ja vuorotteluvapaan rajaus</h5>
+                    <p>
+                        Säästö 200 M€ ansiosidonnaisesta työttömyysturvasta ja 50 M€ vuorotteluvapaasta
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "25-64" : -250 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-tyovoimapolitiikan-maararahat">
+                    <h5>Työvoimapolitiikan määrärahat</h5>
+                    <p>
+                        Suunnataan työvoimapolitiikan rahoitusta vaikuttavimpiin toimenpiteisiin ja avataan työvoimapalveluita yksityisille toimijoille.
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "20-64" : -98 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-tyottomyys-indeksikorotusten-muutos">
+                    <h5>Indeksikorotusten muutos</h5>
+                    <p>
+                        KEL/KHI-perusteiset indeksikorotukset jätetään toteuttamatta v. 2016. Tämän jälkeen korotukset tehdään oletetun äärimaltillisen palkkaratkaisun mukaisesti 2017-2019.
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "20-64" : -23.4 } }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h5>Luo oma ratkaisusi </h5>
+            <p style="margin-top:0">Rahoitusperiaatteet sovelletaan vuosittain aikavälillä 2016–2025<br>&nbsp;</p>
+            <div class="column-chart effects-chart"></div>
+            <table class="bar-control"></table>
+            <h5>Keskustele aiheesta Facebookissa</h5>
+        </div>
+    </div>
+
+    <!-- - - PERHEPOLITIIKKA - - - - - - - - - - - - - - - - - - - - - - - -->
+    <div class="question-view" id="perhepolitiikka">
+        <h3 class="question-title">Perhepolitiikka</h3>
+
+        <div class="left-column">
+            <h5>Nykyisten rahoitusperiaatteiden mukainen kehitys</h5>
+            <p style="margin-top:0">Valitsemasi BKT-kasvuennuste vaikuttaa ao. pylväsdiagrammiin, mutta valitsemasi rahoitusperiaatteet, sopeuttamistoimet ja työrurien pituus eivät vaikuta.</p>
+            <div id="bars-placehholder" style="background:#eee;height:180px;margin-top:10px;color:#ccc">placeholder for bar chart</div>
+ 
+            <div class="question-pane">
+                <h4>Ota kantaa kevään 2015 hallitusohjelman sopeuttamistoimiin
+                    <!--<a class="info-link" href="."></a>--></h4>
+
+                <div class="question checkbox" id="q-paivahoito">
+                    <h5>Päivähoito / varhaiskasvatus, ryhmäkoot
+                    </h5>
+                    <p>
+                        Nostetaan päivähoidossa yli 3-vuotiaiden lasten ja
+                        kasvattajien määrän suhdetta 1/7:stä 1/8:aan.
+                    </p>
+                    <div class="json-data">
+                        {   "effects": {
+                                "0-4"   : -41.3,
+                                "5-9"   : -17.7
+                            }
+                        }
+                    </div>
+                </div>
+
+                <div class="question checkbox"
+                        id="q-lapsilisan-indeksisidonnaisuus">
+                    <h5>Indeksikorotusten muutos
+                    </h5>
+                    <p>
+                        Lakkautetaan lapsilisän indeksisidonnaisuus
+                    </p>
+                    <div class="json-data">
+                        {   "effects": {
+                                "0-4"   : -24.5,
+                                "5-9"   : -24.5,
+                                "10-14" : -24.5,
+                                "15-19" : -12.3
+                            }
+                        }
+                    </div>
+                </div>
+
+                <div class="question checkbox"
+                        id="q-paivahoitomaksut">
+                    <h5>Päivähoitomaksut
+                    </h5>
+                    <p>
+                        Voidaan toteuttaa joko nostamalla nykyisiä
+                        maksuja tai tuomalla mukaan uusi ylin maksuluokka.
+                    </p>
+                    <div class="json-data">
+                        {   "effects": {
+                                "0-4"   : -34.0,
+                                "5-9"   : -14.6
+                            }
+                        }
+                    </div>
+                </div>
+
+                <div class="question checkbox"
+                        id="q-vanhempainpaivarahat">
+                    <h5>Vanhempainpäivärahat
+                    </h5>
+                    <p>
+                       Rajataan äitiys-, isyys ja vanhempainrahakaudelta
+                       kertyvää loman karttumaa maksimissaan 6 kuukauteen.
+                    </p>
+                    <div class="json-data">
+                        {   "effects": {
+                                "20-24"   : -4.7,
+                                "25-29"   : -9.3,
+                                "30-34"   : -9.3,
+                                "35-39"   : -4.7
+                            }
+                        }
+                    </div>
+                </div>
+
+                <div class="question checkbox"
+                        id="q-subjektiivinen-paivahoito-1">
+                    <h5>Subjektiivisen päivähoito- oikeuden rajaaminen, vaihe 1
+                    </h5>
+                    <p>
+                        Subjektiivinen päivähoito-oikeus rajataan puolipäiväiseksi
+                        silloin kun toinen vanhemmista hoitaa perheen toista
+                        lasta äitiys-, isyys- tai hoitovapaalla tai kotihoidontuella.
+                    </p>
+                    <div class="json-data">
+                        {   "effects": {
+                                "0-4"   : -16.8,
+                                "5-9"   :  -7.2
+                            }
+                        }
+                    </div>
+                </div>
+
+                <div class="question checkbox"
+                        id="q-subjektiivinen-paivahoito-2">
+                    <h5>Subjektiivisen päivähoito- oikeuden rajaaminen, vaihe 2
+                    </h5>
+                    <p>
+                       Päivähoito-oikeuden rajaaminen puolipäiväiseksi
+                       myös vanhemman ollessa työttömänä.
+                    </p>
+                    <div class="json-data">
+                        {   "effects": {
+                                "0-4"   : -18.9,
+                                "5-9"   :  -8.1
+                            }
+                        }
+                    </div>
+                </div>
+
+                <div class="question checkbox"
+                        id="q-maksullinen-kerhotoiminta">
+                    <h5>Päivähoito / varhaiskasvatus,
+                        maksullinen kerhotoiminta
+                    </h5>
+                    <p>
+                       Mahdollistetaan kunnille toteuttaa esiopetuksessa
+                       olevan lapsen hoito maksullisena kerhotoimintana.
+                    </p>
+                    <div class="json-data">
+                        {   "effects": {
+                                "0-4"   : -13.3,
+                                "5-9"   :  -5.7
+                            }
+                        }
+                    </div>
+                </div>
+
+                <div class="question checkbox"
+                        id="q-maksullinen-esiopetus">
+                    <h5>Mahdollistetaan kunnille toteuttaa esiopetuksessa
+                        olevan lapsen hoito maksullisena kerhotoimintana.
+                    </h5>
+                    <p>
+                       Lisäys
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "0-39" : 20.5 } }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h5>Luo oma ratkaisusi </h5>
+            <p style="margin-top:0">Rahoitusperiaatteet sovelletaan vuosittain aikavälillä 2016–2025<br>&nbsp;</p>
+            <div class="column-chart effects-chart"></div>
+            <table class="bar-control"></table>
+            <h5>Keskustele aiheesta Facebookissa</h5>
+        </div>
+    </div>
+
+    <!-- KOULUTUS  - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <div class="question-view" id="koulutus">
+        <h3 class="question-title">Koulutus</h3>
+
+        <div class="left-column">
+            <h5>Nykyisten rahoitusperiaatteiden mukainen kehitys</h5>
+            <p style="margin-top:0">Valitsemasi BKT-kasvuennuste vaikuttaa ao. pylväsdiagrammiin, mutta valitsemasi rahoitusperiaatteet, sopeuttamistoimet ja työrurien pituus eivät vaikuta.</p>
+            <div id="bars-placehholder" style="background:#eee;height:180px;margin-top:10px;color:#ccc">placeholder for bar chart</div>
+ 
+            <div class="question-pane">
+                <h4>Ota kantaa kevään 2015 hallitusohjelman sopeuttamistoimiin
+                    <!--<a class="info-link" href="."></a>--></h4>
+
+                <div class="question checkbox" id="q-toisen-asteen-koulutus">
+                    <h5>Toisen asteen koulutus, rakenteelliset uudistukset
+                    </h5>
+                    <p>
+                        Sitoudutaan 190 milj. euron säästötasoon julkisessa taloudessa
+                        vuodesta 2017 alkaen. Toimenpiteet voivat koostua monesta eri
+                        toimenpiteestä.
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "15-19" : -171.0 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-ammatillinen-peruskoulutus">
+                    <h5>Ammatillinen peruskoulutus
+                    </h5>
+                    <p>
+                        Muutetaan opetus- ja kulttuuritoimen rahoituslain 23 b § siten, että edellisellä vaalikaudella päätettyjen säästöjen sekä ammatillisen koulutuksen poistojen takuukorotuksen päättymisen vaikutus yksikköhintaan toteutuu täysimääräisesti siten kuin HE 304/2014 perusteluissa on tarkoitettu.
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "15-19" : -39.0 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-perusopetuksen-ryhmakoot">
+                    <h5>Perusopetuksen ryhmäkoot
+                   </h5>
+                    <p>
+                        Luovutaan perusopetuksen ryhmäkoon pienentämiseen myönnettävistä valtionavustuksista
+                    </p>
+                    <div class="json-data">
+                        { "effects": {
+                            "5-9"   :  -7.5,
+                            "10-14" : -15.0,
+                            "15-19" :  -7.5
+                        } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-koulutus-indeksikorotusten-muutos">
+                    <h5>Indeksikorotusten muutos
+                    </h5>
+                    <p>
+                        Valtionosuuksien indeksikorotusten jäädyttäminen
+                    </p>
+                    <div class="json-data">
+                        { "effects": {
+                            "5-9"   : -4.9,
+                            "10-14" : -9.8,
+                            "15-19" : -9.8
+                        } }
+                    </div>
+                </div>
+                <div class="question checkbox"
+                        id="q-koululaisten-aamu-ja-iltapaivatoiminta">
+                    <h5>Koululaisten aamu- ja iltapäivätoiminta
+                    </h5>
+                    <p>
+                        Ajantasaistetaan koululaisten aamu- ja iltapäivätoiminnasta perittävät maksut ja samalla laajennetaan ja tiukennetaan maksujen perimättömyysmahdollisuutta esim. sosiaali- ja terveydenhuoltolain 11 § (13.3.2003) vastaavasti.
+                    </p>
+                    <div class="json-data">
+                        { "effects": {
+                            "5-9"   : -4.75,
+                            "10-14" : -9.5,
+                            "15-19" : -4.75
+                        } }
+                    </div>
+                </div>
+                <div class="question checkbox"
+                        id="q-oppisopimus">
+                    <h5>Oppisopimus
+                    </h5>
+                    <p>
+                        Poistetaan nuorten oppisopimuksen laajentamiseen myönnettäviin avustuksiin varattu lisärahoitus vuodesta 2018 alkaen.
+                    </p>
+                    <div class="json-data">
+                        { "effects": {
+                            "15-19" : -7.6,
+                            "20-24" : -7.6
+                        } }
+                    </div>
+                </div>
+                <div class="question checkbox"
+                        id="q-yleissivistavan-koulutuksen-avustukset">
+                    <h5>Yleissivistävän koulutuksen avustukset
+                    </h5>
+                    <p>
+                        Luovutaan osittain muista yleissivistävän koulutuksen laadun parantamiseen myönnettävistä avustuksista (laadun kehittäminen, koulutuk- sellinen tasa-arvo, kerhotoiminta, oppimisympäristöt ym.)
+                    </p>
+                    <div class="json-data">
+                        { "effects": {
+                            "5-9"   : -2.5,
+                            "10-14" : -2.5,
+                            "15-19" : -2.5,
+                            "20-24" : -2.5
+                        } }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-column">
+            <h5>Luo oma ratkaisusi </h5>
+            <p style="margin-top:0">Rahoitusperiaatteet sovelletaan vuosittain aikavälillä 2016–2025<br>&nbsp;</p>
+            <div class="column-chart effects-chart"></div>
+            <table class="bar-control"></table>
+            <h5>Keskustele aiheesta Facebookissa</h5>
+        </div>
+    </div>
+
+
+    <!-- TERVEYS JA HYVINVOINTI   - - - - - - - - - - - - - - - - -->
+    <div class="question-view" id="terveys">
+        <h3 class="question-title">Terveys ja hyvinvointi</h3>
+
+        <div class="left-column">
+            <h5>Nykyisten rahoitusperiaatteiden mukainen kehitys</h5>
+            <p style="margin-top:0">Valitsemasi BKT-kasvuennuste vaikuttaa ao. pylväsdiagrammiin, mutta valitsemasi rahoitusperiaatteet, sopeuttamistoimet ja työrurien pituus eivät vaikuta.</p>
+            <div id="bars-placehholder" style="background:#eee;height:180px;margin-top:10px;color:#ccc">placeholder for bar chart</div>
+ 
+            <div class="question-pane">
+                <h4>Ota kantaa kevään 2015 hallitusohjelman sopeuttamistoimiin
+                    <!--<a class="info-link" href="."></a>--></h4>
+
+                <div class="question checkbox" id="q-terveyspalvelumaksujen-korotus">
+                    <h5>Sosiaali- ja terveyspalvelujen asiakasmaksujen korotus</h5>
+                    <p>
+                        Pitkäaikaisesta laitoshoidosta, palveluasumisesta, kotiin annettavista palveluista ja muista sosiaali- ja terveydenhuollon palveluista perittäviä asiakasmaksuja korotetaan.
+                    </p>
+                    <div class="json-data">
+                        { "effects": -150 }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-erikoissairaanhoidon-kustannuserot">
+                    <h5>Erikoissairaanhoidon kustannuserojen pienentäminen</h5>
+                    <p>
+                        Erikoissairaanhoidon kustannusten hillitsemiseksi otetaan  käyttöön kannustinjärjestelmä, jossa vuosittain maksetaan sairaanhoitopiireille kannustetukea, jos niiden aluekohtaisilla korjaustekijöillä tarkistetut asukaskohtaiset käyttökustannukset ylittävät enintään 15%:lla maan keskiarvotason.
+                    </p>
+                    <div class="json-data">
+                        { "effects": -150 }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-laakekorvaukset">
+                    <h5>Lääkekorvaukset</h5>
+                    <p>
+                        Lääkekorvauksiin kohdistetaan 150 milj. euron säästö julkiseen talouteen 2017 lukien.
+                    </p>
+                    <div class="json-data">
+                        { "effects": -135 }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-alueellinen-erikoissairaanhoito">
+                    <h5>Alueellisen erikoissairaanhoidon järjestämisen tehostaminen</h5>
+                    <p>
+                        Erikoissairaanhoidossa säädetään kunnille velvoite ohjata tiettyjä vaativia leikkauksia sairaanhoitopiirissään tai muualla sellaisille terveydenhuollon yksiköille, jotka täyttävät tietyt osaamista tukevat vähimmäiskriteerit.
+                    </p>
+                    <div class="json-data">
+                        { "effects": -123.5 }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-vanhuspalvelujen-henkilostomitoitus">
+                    <h5>Vanhuspalvelujen henkilöstömitoituksen tarkistaminen</h5>
+                    <p>
+                        STM:n ja Suomen Kuntaliiton 2013 julkistamaa laatusuositusta hyvän ikääntymisen turvaamiseksi ja palvelujen parantamiseksi tarkistetaan siten, että tehostetussa palveluasumisessa ja vanhainkodeissa henkilöstön ehdoton vähimmäismäärä olisi 0,40–0,50 hoitotyöntekijää / asiakas (nykyisin 0,50).
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "65-90+" : -56.5 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-tehy-indeksikorotuksen-muutos">
+                    <h5>Indeksikorotusten muutos</h5>
+                    <p>
+                        KEL/KHI-perusteiset indeksikorotukset jätetään toteuttamatta v. 2016. Tämän jälkeen korotukset tehdään oletetun äärimaltillisen palkkaratkaisun mukaisesti 2017-2019.
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "20-90+" : -55.4 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-sairauspaivarahat">
+                    <h5>Sairauspäivärahat</h5>
+                    <p>
+                        Muutetaan sairauspäivärahan määräytymisen tulorajoja ja korvausastetta. Etuuden määräytymisessä käytettävää 70%:n korvaustasoon oikeuttavan päivärahan vuosityötulon rajaa lasketaan nykyisestä 36 419 eurosta 30 000 euroon ja muutetaan tämän tulorajan ylittävän tulon korvausaste 35 %:iin.
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "25-64" : -21 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-aura-kuntoutus">
+                    <h5>AURA-kuntoutus</h5>
+                    <p>
+                        Lakkautetaan AURA-kuntoutus vuoden 2016 alusta eli
+                        ennenkuin sitä ehditään käynnistämään.
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "25-64" : -21 } }
+                    </div>
+                </div>
+                <div class="question checkbox"
+                    id="q-yksityisen-hammaslaakarin-korvaukset">
+                    <h5>Yksityisellä hammaslääkärillä käynnin kustannuksista maksettavat korvaukset</h5>
+                    <p>
+                        Vähennetään viidenneksellä yksityisistä hammaslääkärinpalkkioista maksettavaa sairausvakuutuskorvausta. Hammashoidon osalta keskimääräinen korvaus käyntikertaa kohden on tällä hetkellä n. 26% peritystä palkkiosta.
+                    </p>
+                    <div class="json-data">
+                        { "effects": -9 }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-yksityisen-laakarin-korvaukset">
+                    <h5>Yksityisellä lääkärillä käynnin kustannuksista maksettavat korvaukset</h5>
+                    <p>
+                        Leikataan sairausvakuutuskorvausta lääkäripalkkioista. Lääkärinpalkkioiden keskimääräinen korvaus on tällä hetkellä n. 21% peritystä palkkiosta.
+                    </p>
+                    <div class="json-data">
+                        { "effects": -10 }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-sote-suunnitteluvelvoite">
+                    <h5>Sosiaali- ja terveydenhuollon suunnitteluvelvoitteiden vähentäminen</h5>
+                    <p>
+                        Muutetaan eräiden palvelusuunnitelmien laadintavelvoitteet siten, että suunnitelmat laaditaan vain kunkin sosiaali- ja terveydenhuollon asiakkaan palvelutarpeen sitä edellyttäessä.
+                    </p>
+                    <div class="json-data">
+                        { "effects": -9 }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-ruokavaliokorvaus">
+                    <h5>Ruokavaliokorvaus</h5>
+                    <p>
+                        Poistetaan ruokavaliokorvaus, jonka määrä on tällä hetkellä 23,60 €/kk.
+                    </p>
+                    <div class="json-data">
+                        { "effects": -10 }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-perhehoidon-kehittaminen">
+                    <h5>Perhehoidon kehittäminen lähinnä ikäihmisten hoidossa</h5>
+                    <p>
+                        Kehitetään perhehoitojärjestelmän ehtoja ja kannustimia ja siinä yhteydessä lisätään myös tukea.
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "30-54" : 18.5 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-omaishoitajien-vapaat">
+                    <h5>Omais- ja perhehoitajien vapaat</h5>
+                    <p>
+                        Kehitetään perhehoitojärjestelmän ehtoja ja kannustimia ja siinä yhteydessä lisätään myös tukea.
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "30-69" : 75 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-vanhusten-kotihoito">
+                    <h5>Vanhusten kotihoito, veteraanit ja sotainvalidien haitta-asteen alentaminen</h5>
+                    <p>
+                        Lisäys
+                    </p>
+                    <div class="json-data">
+                        { "effects": { "60-90+" : 9 } }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h5>Luo oma ratkaisusi </h5>
+            <p style="margin-top:0">Rahoitusperiaatteet sovelletaan vuosittain aikavälillä 2016–2025<br>&nbsp;</p>
+            <div class="column-chart effects-chart"></div>
+            <table class="bar-control"></table>
+            <h5>Keskustele aiheesta Facebookissa</h5>
+        </div>
+    </div>
+
+</div>

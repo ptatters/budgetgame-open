@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Budjettipeli</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Budjettipeli.fi – suunnittele kestävä hyvinvointiyhteiskunta" />
+    <meta property="og:description" content="Suomen väestö vanhenee nopeammin kuin missään muualla maailmassa. Vanhusten kasvava määrä suhteessa työikäisiin tarkoittaa, että lähivuosina julkiset menot kasvavat tuntuvasti mutta verokertymä ei juuri kasva. Budjettipelissä voit kokeilla tutkia uusia tapoja jakaa hyvinvointipalveluiden rahoitustaakkaa julkisyhteisöjen ja yksityishenkilöiden välillä. Miltä näyttää sinun näkemyksesi kestävästä hyvinvointiyhteiskunnasta?" />
+    <meta property="og:url" content="{{ options.base_url }}" />
+    <meta property="og:image" content="{{ options.base_url }}images/budjettipeli_fb-tagimage.png" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@hahmota">
+    <meta name="twitter:title" content="Budjettipeli.fi – suunnittele kestävä hyvinvointiyhteiskunta">
+    <meta name="twitter:description" content="Suomen väestö vanhenee nopeammin kuin missään muualla maailmassa. Vanhusten kasvava määrä suhteessa työikäisiin tarkoittaa, että lähivuosina julkiset menot kasvavat tuntuvasti mutta verokertymä ei juuri kasva. Budjettipelissä voit kokeilla tutkia uusia tapoja jakaa hyvinvointipalveluiden rahoitustaakkaa julkisyhteisöjen ja yksityishenkilöiden välillä. Miltä näyttää sinun näkemyksesi kestävästä hyvinvointiyhteiskunnasta?">
+    <meta name="twitter:image" content="{{ options.base_url }}images/budjettipeli_fb-tagimage.png">
+
+
+    <!-- We set the base attribute so that we can use relative paths for
+         resources, also from the /budjetti/XXXX urls. -->
+    <base href="{{ options.base_url }}">
+    <link rel="icon" href="images/favicon.png">
+    <!-- Webfont - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+
+    <link rel='stylesheet'
+          type='text/css'
+          href='https://fonts.googleapis.com/css?family=Roboto'
+          >
+
+    <link rel='stylesheet'
+          type='text/css'
+          href='https://fonts.googleapis.com/css?family=Roboto:medium'
+          >
+
+    <!-- Using Google's fonts as they look better than the local fonts
+         provided below. Switch to the commented-out code to try the
+         local fonts. -->
+
+
+        <!--     <link rel="stylesheet"
+                 type="text/css"
+                 href="webfonts/Roboto/stylesheet.css">
+         -->
+
+            {{/*  T.require_files({
+                    files : [
+                        'webfonts/Roboto'
+                    ]
+                });
+            */}}
+
+    <!-- IMAGES  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    {{
+        // listing the files that should be included in the build
+        T.require_files({
+            files : [
+                // FB meta tag image
+                'images/budjettipeli_fb-tagimage.png',
+
+                // Checkbox graphics
+                'images/bg_checkbox_ON.svg',
+                'images/bg_checkbox_OFF.svg',
+
+                // Graph legend images
+                'images/dots1.png',
+                'images/dots2.png',
+                'images/dots3.png',
+
+                // nav arrows
+                'images/vaikutukset_arrow.png',
+
+                // Three dots in a circle, for info links
+                'images/infodots.png',
+
+                // Stripe pattern for the column graphs
+                'images/stripe-pattern-yellow.png',
+
+                // Wedge (downwards triangle) for the popup menu buttons
+                'images/wedge.png',
+
+                // Intro svgs
+                'images/fk_introbox1_graph.svg',
+
+                // Footer bar nav arrows
+                'images/arrow_left.png',
+                'images/arrow_right.png',
+
+                // Footer bar infobox arrow
+                'images/infoboxarrow.svg',
+
+                // Social buttons
+                'images/social-1_logo-facebook.svg',
+                'images/social-1_logo-twitter.svg',
+                'images/bg_share_icon.svg',
+
+                //Sponsor logos
+                'images/budjettipeli_logo_1.png',
+                'images/budjettipeli_logo_2.png',
+                'images/budjettipeli_logo_3.png',
+                'images/budjettipeli_logo_4.png',
+                'images/budjettipeli_logo_5.png',
+
+                //Github forkme
+                'images/ribbon_forkme_24.png',
+
+                // Creative commons image
+                'images/ccbysa.png',
+
+                //Favicon
+                'images/favicon.png',
+
+                // Bracket for combined question pane
+                'images/bracket_svg.svg'
+            ]
+        });
+    }}
+
+    <!-- CSS - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    {{
+        T.require_stylesheets({
+            result_name : 'css/budget-game-ui.css',
+            contents : [
+                'css/normalize.css',
+                'css/main.css',
+                'css/header.css',
+                'css/footer.css',
+                'css/gdb_menu.css',
+                'css/question.css',
+                'css/instructions.css',
+                'css/sharelanding.css',
+                'css/intro.css'
+            ]
+        });
+    }}
+
+    <!-- Sankey diagram code - - - - - - - - - - - - - - - - - - - - - - - -->
+    {{ T.include('sankey-bridge.html'); }}
+
+    <!-- 3RD PARTY JAVASCRIPT COMPONENTS  - - - - - - - - - - - - - - - - -->
+    {{
+        // Library with many useful functions
+        T.require_javascript('js/lib/underscore/underscore.js');
+
+        // We are using Jquery for DOM manipulation throughout the app.
+        T.require_javascript('js/lib/jquery/jquery.js');
+        T.require_javascript('js/lib/jquery/jquery.easing.min.js');
+
+        // Fastclick removes the unnecessary delay from touch events on links
+        // and buttons.
+        T.require_javascript('js/lib/fastclick/fastclick.js');
+    }}
+
+    <!-- WEB APP JAVASCRIPT -->
+    {{
+        T.require_javascript({
+            result_name : 'budget-game-ui.js',
+            contents: [
+                'sankey/js/charts/area.js',
+                'js/src/auxiliary.js',
+                'js/src/dropdown.js',
+                'js/src/tables.js',
+                'js/src/prepare_tables.js',
+                'js/src/application_state.js',
+                'js/src/model.js',
+                'js/src/main.js',
+                'js/src/introduction.js',
+                'js/src/column-chart.js',
+                'js/src/questions-popup.js',
+                'js/src/sankey-bridge.js',
+                'js/src/footer.js',
+                'js/src/sharelanding.js'
+            ]
+        });
+    }}
+
+    <!-- This is filled server-side when opening a shared budget -->
+    {{{{ stored_budget_data }}}}
+
+</head>
+<body id="page-top">
+    {{ T.include('header.html'); }}
+    <div class="base-page">
+
+    <div class="contentbox">
+        <div class="main-content">
+            <!-- MAIN BUDGET SANKEY DIAGRAM -->
+            <div class="sankey-box mainpage-section" id="budgeteering-box">
+                 <div class="sankey-diagram"></div>
+            </div>
+
+            <!-- BUDGET EFFECTS DIAGRAM -->
+            <div class="effects-box mainpage-section" id="effects-box" style="display:none">
+
+                <div class="float-left">
+                    <p class="subtitle2">
+                        Miten eri ikäryhmät kuluttavat
+                        tai maksavat julkisia palveluita
+                        ja tulonsiirtoja?
+                    </p>
+                </div>
+
+                <!-- Graph legend -->
+                <div >
+                    <table class="dots">
+                        <tr>
+                            <td><img src="images/dots2.png" alt=""></td><td>2013</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/dots1.png" alt=""></td><td>Tilanne ilman politiikkamuutoksia, <span class="active_year">20xx</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/dots3.png" alt=""></td><td>Ratkaisusi <span class="active_year">20xx</span></td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- infolink, disabled for now.
+                <a class="info-link float-right" href="" target="_blank"
+                    title="Lisätietoa (avautuu uuteen tabiin)"
+                    ><img src="images/infodots.png" class="infodots" alt="&hellip;"></a>
+                -->
+                <table class="age-graph clear-all">
+                    <tr>
+                        <td class="age-graph-labels-upper">
+                           <div class="age-graph-label">NETTO-<br>MAKSAJAT</div>
+                           <div class="age-graph-label-income">xxx</div>
+                        </td>
+                        <td rowspan="2">
+                            <div class="area-diagram">Area Diagram</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="age-graph-labels-lower">
+                            <div class="age-graph-label">NETTO-<br>KULUTTAJAT</div>
+                            <div class="age-graph-label-expense">xxx</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- CHANGES TO SERVICES LIST -->
+            <!-- Disabled for now
+            <div class="mainpage-section">
+                <h3>Muutokset palveluihin
+                    <a class="info-link" href="" target="_blank"
+                        title="Lisätietoa (avautuu uuteen tabiin)"><img
+                            src="images/infodots.png"
+                            alt="&hellip;"
+                            class="infodots infodots-inline"></a>
+                </h3>
+                <div class="service_changes">
+                    <!- - Dynamically filled - ->
+                </div>
+            </div>
+            -->
+
+            <!-- SHARE & COMMENT SECTION -->
+            <div class="mainpage-section" id="share-box" style="display:none">
+
+                <!-- SAVE / SHARE -->
+                <div class="column share-section">
+                    <div class="share">
+                        <h3>Tallenna ja jaa ratkaisusi</h3>
+
+                        <h4>Nimesi/budjettiratkaisusi otsikko</h4>
+                        <input type="text" class="budget_title">
+
+                        <h4>Kirjoita lyhyt kuvaus ratkaisustasi</h4>
+                        <textarea class="budget_description"></textarea><br>
+
+                        <button type="button" class="share-link">Jaa ratkaisusi</button>
+                        <div class="share-popup" style="visibility: hidden">
+                            <a href="https://facebook.com/sharer.php" class="fb-button" target="_blank"></a>
+                            <a href="#" class="twitter-button"></a>
+                            <span class="shared-link">shared-link</span>
+                        </div>
+
+                    </div>
+                    <span>Yhteistyössä:</span>
+                    <div class="sponsors">
+                        <img src="images/budjettipeli_logo_1.png">
+                        <img src="images/budjettipeli_logo_2.png">
+                        <img src="images/budjettipeli_logo_3.png">
+                        <img src="images/budjettipeli_logo_4.png">
+                        <img src="images/budjettipeli_logo_5.png">
+                        <span>Suunnittelu ja toteutus:<br>HAHMOTA OY<span>
+                    </div>
+                    <p class="credits">Budjettipelin lähdekoodi on julkaistu avoimella lisensillä. Budjettipelin laskentaperiaatteista ja olettamuksista voi lukea lisää osoitteessa <a href="http://fi.opasnet.org/fi/Hyvinvointibudjetti" target="_blank">http://fi.opasnet.org/fi/Hyvinvointibudjetti</a>
+                    </p>
+                    <div class="social">
+                        <div class="fb-like" data-href="http://budjettipeli.fi/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><a href="https://github.com/ptatters/budgetgame" class="forkme"><img src="images/ribbon_forkme_24.png"></a>
+                    </div>
+                    <div class="creative-commons">
+                    <img src="images/ccbysa.png"><span>Hahmota Oy 2015</span><span>Yhteydet: hahmota (ät) budjettipeli.fi</span>
+                    </div>
+                </div>
+
+                <!-- FACEBOOK DISCUSSION -->
+                <div class="column">
+                    <h3>Keskustele budjettipelistä Facebookissa</h3>
+
+                    {{ T.include('facebook-comments.html'); }}
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    {{ T.include('footer.html'); }}
+
+    <div class="question-popup-holder">
+    </div>
+
+    <!-- INTRO POPUP -->
+    <div class="intro-base" style="display:none;">
+    </div>
+
+    <!-- LANDING PAGE FOR SAVED/SHARED SOLUTION -->
+    {{ T.include('sharelanding.html'); }}
+
+    <!--- QUESTION POPUP -->
+    {{ T.include('question-popup.html'); }}
+    {{ T.include('expense-questions.html'); }}
+    {{ T.include('expense-questions-4branches.html'); }}
+    {{ T.include('income-questions.html'); }}
+
+    <!-- INTRO TEMPLATES -->
+    {{ T.include("intro.html"); }}
+
+    <!-- POPUP MENU TEMPLATES -->
+    {{ T.include('gdb-popup.html'); }}
+    {{ T.include('retirement-popup.html'); }}
+
+    <!-- ALERT TEMPLATE -->
+    {{ T.include('small-screen-alert.html'); }}
+
+    <!-- GOOGLE ANALYTICS -->
+    {{  if (options.include_analytics) {
+            T.include("google_analytics.html");
+        }
+    }}
+
+</body>
+</html>
+

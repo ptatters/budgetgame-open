@@ -1,0 +1,55 @@
+{{
+    // Stylesheets
+    T.require_stylesheets({
+        result_name : 'css/sankey-diagram.css',
+        base_path : '../../css',
+        contents : [
+            'charts/area.css',
+            'sankey/sankey_diagram.css'
+        ]
+    });
+
+    // d3
+    T.require_javascript("js/lib/d3.v3/d3.v3.js");
+
+    // Sankey code
+    T.require_javascript({
+        result_name : 'sankey-concatenated.js',
+        base_path : '../../js',
+        contents: [
+            // Sankey
+            'sankey/sankey.js',
+
+            // Sankey nodes
+            'sankey/nodes/sankey_node.js',
+            'sankey/nodes/sankey_onode.js',
+            'sankey/nodes/sankey_inode.js',
+            'sankey/nodes/sankey_endnode.js',
+            'sankey/nodes/sankey_startnode.js',
+
+            // Sankey links
+            'sankey/links/sankey_link.js',
+            'sankey/links/sankey_input.js',
+            'sankey/links/sankey_overflow.js',
+            'sankey/links/sankey_underflow.js',
+
+            // Sankey texts
+            'sankey/text/sankey_text.js',
+            'sankey/text/sankey_link_text.js',
+            'sankey/text/sankey_big_text.js',
+            'sankey/text/sankey_big_itext.js'
+        ]
+    });
+
+    // Image files required by the Sankey diagram
+    T.require_files({
+        source_directory : "../../res/icons",
+        target_directory : "res/icons",
+        files : [
+            'button_question.png',
+            'button_question_noshadow.png',
+            'purplenode_overlayimage.svg'
+        ]
+    });
+}}
+

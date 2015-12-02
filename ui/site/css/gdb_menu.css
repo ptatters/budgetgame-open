@@ -1,0 +1,63 @@
+/* The small wedge image used for making the menu look a menu */
+.triangle-down img {
+    height: 5px;
+    margin-left: 3px;
+    margin-bottom: 2px;
+}
+
+.bkt-popup {
+    background: white;
+    position: fixed;
+    top: 55px;
+    left: 170px;
+    width: 270px;
+    z-index: 20;
+    box-shadow: 0 0 6px #c1c1bc;
+    padding-top: 3px;
+}
+
+.bkt-popup button {
+    display: block;
+    width: 100%;
+    padding: 5px 20px;
+    text-align: right;
+    border: 0;
+    background: none;
+    color: #666;
+    font-size: 12px;
+}
+
+.bkt-popup .selected {
+    background: #d1e3ef;
+    color: black;
+}
+
+.bkt-popup .explanation {
+    padding: 10px 20px;
+}
+
+.bkt-popup h4 {
+    font-size: 14px;
+}
+.bkt-popup p {
+    font-size: 14px;
+}
+
+.bkt-popup .if-selected {
+    visibility: hidden;
+}
+
+.bkt-popup .selected .if-selected {
+    visibility: visible;
+}
+
+.retirement-options .value {
+    font-size: 19px;
+    width: 1.5em;
+    text-align: right;
+    display: inline-block;
+}
+
+.gdb-options .value {
+    font-size: 19px;
+}

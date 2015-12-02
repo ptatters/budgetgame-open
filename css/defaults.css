@@ -1,0 +1,14 @@
+body {
+	position: absolute;
+	
+	height: auto;
+	width: 100%;
+	top: 0px;
+	margin:0px;
+	padding:0px;
+}
+#diagram,
+#area_chart 
+{
+	background: #F1F1F0;
+}

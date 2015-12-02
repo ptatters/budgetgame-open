@@ -1,0 +1,65 @@
+<!-- question view templates. One div with class question-view for each
+     separate view. Each view has unique id attribute.
+-->
+<div class="question-templates expense-question-templates" style="display:none">
+
+    <!-- - - MAANPUOLUSTUS - - - - - - - - - - - - - - - - - - - - - - - -->
+    <div class="question-view" id="maanpuolustus">
+        <h3 class="question-title">Maanpuolustus</h3>
+
+        <div class="left-column">
+            <h5>Nykyisten rahoitusperiaatteiden mukainen kehitys</h5>
+            <p style="margin-top:0">Valitsemasi BKT-kasvuennuste vaikuttaa ao. pylväsdiagrammiin, mutta valitsemasi rahoitusperiaatteet, sopeuttamistoimet ja työrurien pituus eivät vaikuta.</p>
+            <div id="bars-placehholder" style="background:#eee;height:180px;margin-top:10px;color:#ccc">placeholder for bar chart</div>
+
+            <div class="question-pane">
+                <h4>Ota kantaa kevään 2015 hallitusohjelman sopeuttamistoimiin
+                    <!--<a class="info-link" href="."></a>--></h4>
+
+                <div class="question checkbox" id="q-sotilaallinen-kriisinhallinta">
+                    <h5>Sotilaallinen kriisinhallinta
+                    </h5>
+                    <p>
+                        Vähennetään osallistumista sotilaallisiin rauhanturvaoperaatioihin.
+                    </p>
+                    <div class="json-data">
+                        { "target": "maanpuolustus",
+                          "effects": -13.5 }
+                    </div>
+                </div>
+
+                <div class="question checkbox" id="q-puolustusvoimien-ruokahuolto">
+                    <h5>Puolustusvoimien ruokahuolto
+                    </h5>
+                    <p>
+                        Puolustusvoimien ruokahuolto avataan kilpailulle v. 2017.
+                    </p>
+                    <div class="json-data">
+                        { "target": "maanpuolustus",
+                          "effects": -1.4 }
+                    </div>
+                </div>
+
+                <div class="question checkbox" id="q-puolustusvoimien-lisamaararaha">
+                    <h5>Puolustusvoimien lisämääräraha
+                    </h5>
+                    <p>
+                        Puolustusvoimien lisämääräraha
+                    </p>
+                    <div class="json-data">
+                        { "target": "maanpuolustus",
+                          "effects": 127 }
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-column">
+            <h5>Luo oma ratkaisusi </h5>
+            <p style="margin-top:0">Rahoitusperiaatteet sovelletaan vuosittain aikavälillä 2016–2025<br>&nbsp;</p>
+            <div class="column-chart effects-chart"></div>
+            <h5>Keskustele aiheesta Facebookissa</h5>
+        </div>
+    </div>
+
+</div>

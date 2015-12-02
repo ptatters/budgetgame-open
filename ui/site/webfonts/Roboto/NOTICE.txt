@@ -1,0 +1,4 @@
+Font data copyright Google 2012
+
+The Roboto svg font includes a € (unicode: &#x20ac;) glyph taken from 
+http://www.fontsquirrel.com/fonts/roboto by Chrisitan Robertson under the Apache License v2.

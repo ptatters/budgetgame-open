@@ -1,0 +1,177 @@
+<!--
+    Income question view templates. One div with class question-view for
+    each separate view. Each view has unique id attribute. The view ids are
+    used to connect the views to corresponding values in the model.
+
+-->
+<div class="question-templates income-question-templates" style="display:none">
+
+    <!-- - - Verot ja veronluonteiset maksut - - - - - - - - - - -->
+    <div class="question-view" id="tuloverot">
+        <h3 class="question-title">
+            Verot ja veronluonteiset maksut
+        </h3>
+        <div class="left-column">
+            <h5>Nykyisten rahoitusperiaatteiden mukainen kehitys</h5>
+            <p style="margin-top:0">Valitsemasi BKT-kasvuennuste vaikuttaa ao. pylväsdiagrammiin, mutta valitsemasi rahoitusperiaatteet, sopeuttamistoimet ja työrurien pituus eivät vaikuta.</p>
+            <div id="bars-placehholder" style="background:#eee;height:180px;margin-top:10px;color:#ccc">placeholder for bar chart</div>
+ 
+            <div class="question-pane">
+                <h4>Ota kantaa kevään 2015 hallitusohjelman sopeuttamistoimiin</h4>
+
+                <div class="question checkbox" id="q-ansiotuloverotuksen-tarkistukset">
+                    <h5>Jotta työn verotus ei kiristy, tehdään
+                        ansiotuloverotukseen ansiotason nousua ja/tai inflaatiota vastaavat tarkistukset vuosittain</h5>
+                    <div class="json-data">
+                        {   "effects": {
+                                "20-24" : -10,
+                                "25-64" : -160,
+                                "65-69" : -10
+                            }
+                        }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-asuntolainojen-korkovahennysoikeus">
+                    <h5>Pienennetään asuntolainojen korkovähennysoikeutta nopeutetussa aikataulussa siten, että alenema on 10 %-yksikköä vuodessa. Vähennys 2016 on 55%, 2017 45%, 2018 35% ja 2019 25%.</h5>
+                    <div class="json-data">
+                        { "effects": { "25-64" : 150 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-kiinteistovero">
+                    <h5>Korotetaan maltillisesti kiinteistöveron ala- ja ylärajoja.</h5>
+                    <div class="json-data">
+                        { "effects": { "30-90+" : 100 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-solidaarisuusvero">
+                    <h5>Solidaarisuusvero jatkuu vaalikauden loppuun asti.</h5>
+                    <div class="json-data">
+                        { "effects": { "60-90+" : 65 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-tyotulovahennyksen-korotus">
+                    <h5>Korotetaan työtulovähennystä, kohdistuu pieni- ja keskituloisille.</h5>
+                    <div class="json-data">
+                        {   "effects": {
+                                "20-24" : -25,
+                                "25-64" : -400,
+                                "65-69" : -25
+                            }
+                        }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-yrittajavahennys">
+                    <h5>
+                        Otetaan käyttöön 5 % yrittäjävähennys liikkeen- ja ammatinharjoittajille, maa-, metsä- ja porotalouden harjoittajille sekä elinkeino- ja verotusyhtymille.</h5>
+                    <div class="json-data">
+                        { "effects": { "25-64" : -130 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-sukupolvenvaihdosten-edistaminen">
+                    <h5>
+                        Edistetään sukupolvenvaihdoksia perintöveroa keventäen ja arvioidaan muut kehittämistarpeet.</h5>
+                    <div class="json-data">
+                        { "effects": { "65-90+" : -40 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-metsatilojen-sukupolvenvaihdokset">
+                    <h5>
+                        Helpotetaan metsätilojen sukupolvenvaihdoksia ja/tai parannetaan metsävähennystä.</h5>
+                    <div class="json-data">
+                         { "effects": { "25-90+" : -32.3 } }
+                    </div>
+                </div>
+                <div class="question checkbox" id="q-korkeakoululahjoitukset">
+                    <h5>
+                        Yksityishenkilöiden korkeakouluille annettavien lahjoitusten verovähennysoikeus 500 000 euroon asti, lahjoituksen alaraja 850 euroa.</h5>
+                    <div class="json-data">
+                         { "effects": { "25-84" : -5 } }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h5>Säädä verojen ja sosiaaliturvamaksujen suuruutta</h5>
+            <p style="margin-top:0">&nbsp;<br>&nbsp;</p>
+            <div class="column-chart effects-chart"></div>
+            <table class="bar-control"></table>
+            <h5>Keskustele aiheesta Facebookissa</h5>
+        </div>
+    </div>
+
+
+    <!-- - - Julkisyhteisöjen muut tulot - - - - - - - - - - - - - - - - - -->
+    <div class="question-view" id="valilliset_verot">
+        <h3 class="question-title">
+            Välilliset verot
+        </h3>
+         <div class="left-column">
+            <h5>Nykyisten rahoitusperiaatteiden mukainen kehitys</h5>
+            <p style="margin-top:0">Valitsemasi BKT-kasvuennuste vaikuttaa ao. pylväsdiagrammiin, mutta valitsemasi rahoitusperiaatteet, sopeuttamistoimet ja työrurien pituus eivät vaikuta.</p>
+            <div id="bars-placehholder" style="background:#eee;height:180px;margin-top:10px;color:#ccc">placeholder for bar chart</div>
+ 
+            <div class="question-pane">
+                <h4>Ota kantaa kevään 2015 hallitusohjelman sopeuttamistoimiin</h4>
+
+                <div class="question checkbox" id="q-tupakkavero">
+                    <h5>Korotetaan tupakkaveroa asteittain.
+                    </h5>
+                    <div class="json-data">
+                        {   "target" : "valilliset_verot",
+                            "effects": { "20-79" : 270 }
+                        }
+                    </div>
+                </div>
+
+                <div class="question checkbox" id="q-ajoneuvovero">
+                    <h5>Kiristetään ajoneuvoveroa
+                    </h5>
+                    <div class="json-data">
+                        {   "target" : "valilliset_verot",
+                            "effects": { "20-79" : 100 }
+                        }
+                    </div>
+                </div>
+
+                <div class="question checkbox" id="q-autoveron-lasku">
+                    <h5>Autoveroa lasketaan pienipäästöisiä autoja suosien hallituskauden aikana niin, että verotuottovaikutuson vuoden 2019 tasolla noin 200 milj. euroa. Toimenpide suoritetaan useissa osissa markkinahäiriöiden välttämiseksi.
+                    </h5>
+                    <div class="json-data">
+                        {   "target" : "valilliset_verot",
+                            "effects": { "20-79" : -200 }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-column">
+            <h5>Säädä verojen ja sosiaaliturvamaksujen suuruutta</h5>
+            <p style="margin-top:0">&nbsp;<br>&nbsp;</p>
+            <div class="column-chart effects-chart"></div>
+            <table class="bar-control"></table>
+            <h5>Keskustele aiheesta Facebookissa</h5>
+        </div>
+    </div>
+
+    <div class="question-view" id="sotumaksut">
+        <h3 class="question-title">
+            Työnantajan sosiaaliturvamaksut
+        </h3>
+         <div class="left-column">
+            <h5>Nykyisten rahoitusperiaatteiden mukainen kehitys</h5>
+            <p style="margin-top:0">Valitsemasi BKT-kasvuennuste vaikuttaa ao. pylväsdiagrammiin, mutta valitsemasi rahoitusperiaatteet, sopeuttamistoimet ja työrurien pituus eivät vaikuta.</p>
+            <div id="bars-placehholder" style="background:#eee;height:180px;margin-top:10px;color:#ccc">placeholder for bar chart</div>
+ 
+            <div class="question-pane">
+            </div>
+        </div>
+        <div class="right-column">
+            <h5>Ota kantaa kevään 2015 hallitusohjelman sopeuttamistoimiin</h5>
+            <p style="margin-top:0">&nbsp;<br>&nbsp;</p>
+            <div class="column-chart effects-chart"></div>
+            <table class="bar-control"></table>
+            <h5>Keskustele aiheesta Facebookissa</h5>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,40 @@
+.slink,
+.sinput {
+	fill: none;
+	opacity: 0.3;
+}
+.soverflow {
+	stroke-dasharray: 5px 5px;
+	fill: none;
+}
+.sunderflow_rect {
+	stroke-dasharray: 2px 2px;
+	stroke: #6C6A65;
+	stroke-width: 1px;
+	fill: none;
+}
+.stext_title {
+	font-weight: 500;
+}
+.sarw_line {
+	fill: none;
+	stroke: black;
+	stroke-width: 2px;
+}
+#sankey_svg {
+	font-family: "Roboto";
+}
+
+.rect_dash_dotted {
+	stroke-dasharray: 3px 3px;
+	fill: none;
+	stroke: #6C6A65;
+}
+.rect_dash_solid {
+	fill: none;
+	stroke: #FFFFFF;
+}
+.sankey_symbol {
+	
+	cursor: pointer;
+}

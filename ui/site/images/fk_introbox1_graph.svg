@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="302.667px" height="234px" viewBox="0 0 302.667 234" enable-background="new 0 0 302.667 234" xml:space="preserve">
+<g>
+	<text transform="matrix(1 0 0 1 253.0195 18.3662)" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="12">Suomi</text>
+	<text transform="matrix(1 0 0 1 253.0195 61.9326)" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="12">EU27</text>
+	<text transform="matrix(1 0 0 1 253.0195 33.3955)" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="12">Ruotsi</text>
+	<text transform="matrix(1 0 0 1 253.0195 46.7412)" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="12">Saksa</text>
+	<polyline fill="none" stroke="#B2B2B2" stroke-width="2" stroke-miterlimit="10" points="245.016,146.871 35.413,146.871 
+		35.413,17.904 	"/>
+	<text transform="matrix(1 0 0 1 22.0176 164)" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="11">2010</text>
+	<text transform="matrix(1 0 0 1 73.8545 164)" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="11">2015</text>
+	<text transform="matrix(1 0 0 1 124.1826 164)" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="11">2020</text>
+	<text transform="matrix(1 0 0 1 178.4668 164)" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="11">2025</text>
+	<path fill="#FFFFFF" stroke="#7C7C7C" stroke-width="0.8981" stroke-miterlimit="10" d="M192.92,146.871"/>
+	<text transform="matrix(1 0 0 1 232.2256 164)" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="11">2030</text>
+	<text transform="matrix(1 0 0 1 8.3486 118.5723)" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="11">60%</text>
+	<text transform="matrix(1 0 0 1 8.3428 85.5361)" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="11">70%</text>
+	<text transform="matrix(1 0 0 1 8.3428 53.791)" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="11">80%</text>
+	<text transform="matrix(1 0 0 1 8.3428 22.3662)" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="11">90%</text>
+	<line opacity="0.7" fill="none" stroke="#B2B2B1" stroke-miterlimit="10" x1="245.952" y1="114.63" x2="35.457" y2="114.63"/>
+	<line opacity="0.7" fill="none" stroke="#B2B2B1" stroke-miterlimit="10" x1="245.952" y1="82.2" x2="35.457" y2="82.2"/>
+	<line opacity="0.7" fill="none" stroke="#B2B2B1" stroke-miterlimit="10" x1="245.952" y1="49.958" x2="35.457" y2="49.958"/>
+	<line opacity="0.7" fill="none" stroke="#B2B2B1" stroke-miterlimit="10" x1="245.952" y1="17.904" x2="35.457" y2="17.904"/>
+	<polyline fill="none" stroke="#626CB3" stroke-width="2" stroke-miterlimit="10" points="36.108,92.758 88.57,71.453 
+		141.03,50.146 193.49,31.292 246.212,18.849 	"/>
+	<polyline fill="none" stroke="#29368F" stroke-width="2" stroke-miterlimit="10" points="36.108,104.354 88.57,95.963 
+		141.03,84.557 193.49,71.924 246.212,57.357 	"/>
+	<polyline fill="none" stroke="#E1141A" stroke-width="2" stroke-miterlimit="10" points="36.108,100.064 88.57,99.17 141.03,89.54 
+		193.49,71.924 246.212,41.38 	"/>
+	<polyline fill="none" stroke="#E3E20F" stroke-width="2" stroke-miterlimit="10" points="36.108,78.429 88.57,70.722 
+		141.03,55.332 193.49,42.039 246.212,33.837 	"/>
+	<rect x="6.347" y="190.21" fill="none" width="275.653" height="80.249"/>
+	<text transform="matrix(1 0 0 1 6.3467 198.46)"><tspan x="0" y="0" fill="#EFEFEF" font-family="'Roboto-Medium'" font-size="11">Huoltosuhteen kehitys ennakoitu kehitys 2010-2030 </tspan><tspan x="0" y="13.2" fill="#EFEFEF" font-family="'Roboto-MediumItalic'" font-size="11">(alle 20 vuotiaiden ja yli 64 vuotiaiden määrä prosenttina </tspan><tspan x="0" y="26.4" fill="#EFEFEF" font-family="'Roboto-MediumItalic'" font-size="11">20-64 vuotiaiden lukumäärästä)</tspan></text>
+</g>
+<image overflow="visible" width="889" height="556" xlink:href="../Screen Shot 2015-05-28 at 16.13.54.png"  transform="matrix(1 0 0 1 667.0908 -293.5054)">
+</image>
+</svg>

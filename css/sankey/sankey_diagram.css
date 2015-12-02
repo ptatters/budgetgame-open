@@ -1,0 +1,76 @@
+#sankey_svg {
+	font-family: "Roboto";
+}
+
+.sankey_label {
+	font: 20px "Roboto";
+	font-weight: 500;
+	fill: #000;
+}
+
+.spath,
+.sinput {
+	fill: none;
+	opacity: 0.3;
+}
+.spath.overflow {
+	stroke-dasharray: 5px 5px;
+	fill: none;
+}
+.sunderflow_rect {
+	stroke: none;
+	fill: #E21D19;
+}
+.stext .stext_title,
+.stext .stext_amount {
+	fill: #616161;
+}
+.stext.sedit .stext_title,
+.stext.sedit .stext_amount,
+.stext.sovfl .stext_title,
+.stext.sovfl .stext_amount {
+	fill: #000000;
+}
+
+.stext.suf .stext_title,
+.stext.suf .stext_amount {
+	fill: #E21D19;
+}
+
+.sbigtext .stext_title,
+.sbigtext .stext_amount {
+	fill: #000;
+}
+
+.stext_title,
+.stext_title.itext.shead {
+	font-weight: 500;
+	font-size: 1em;
+}
+.stext_title.itext {
+	font-weight: 500;
+}
+.stext_title.shead {
+	font-size: 1.5em;
+}
+.sarw_line {
+	fill: none;
+	stroke: #616161;
+	stroke-width: 2px;
+}
+.sarw_dot {
+	fill: #616161;
+}
+.rect_dash_dotted {
+	stroke-dasharray: 3px 3px;
+	fill: none;
+	stroke: #6C6A65;
+}
+.rect_dash_solid {
+	fill: none;
+	stroke: #FFFFFF;
+}
+.sicon {
+
+	cursor: pointer;
+}

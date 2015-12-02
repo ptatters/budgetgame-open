@@ -1,0 +1,473 @@
+body {
+    font-family: "Roboto", "Helvetica", "Sans-Serif";
+    font-size: 12px;
+    color: #444;
+    background: #ededed;
+    margin: 0;
+    height: 100%;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1 a {
+    color: #444;
+}
+
+.contentbox {
+    position: relative;
+    top: 94px;
+    padding-top: 12px;
+    padding-bottom: 40px;
+}
+
+.main-content {
+    margin-left: 30px;
+}
+
+button {
+    border: 0;
+    background: 0;
+    font-family: "Roboto", "Helvetica", "Sans-Serif";
+    padding: 0;
+
+}
+
+button:focus {outline:0;}
+
+.centered {
+    text-align:center;
+}
+
+.diagram {
+    display: inline-block;
+}
+
+
+.base-page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+}
+
+.sankey-box, .effects-box {
+    max-width: 900px;
+}
+.sankey-box {
+    max-width: 1350px;
+}
+
+a.reset {
+    text-decoration: none;
+    color: #333;
+}
+
+.effects-box {
+    vertical-align: top;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin:0;
+    line-height: 18px;
+}
+
+.subtitle2 {
+    width: auto;
+    margin-top: 4px;
+    margin-bottom: 80px;
+    margin-left: 180px;
+    font: 18px "Roboto";
+    font-weight: 500;
+}
+
+.dots {
+    position: absolute;
+    display: inline-block;
+    margin-top: 2px;
+    left: 180px;
+    top: 45px;
+    border-spacing: 0;
+}
+
+.dots td {
+    font-size: 13px;
+    text-align: left;
+    padding-right: 15px;
+    font-weight: 500;
+}
+
+.float-left {
+    float:left;
+}
+
+.float-right {
+    float:right;
+}
+
+.columns {
+    vertical-align: top;
+    margin: auto;
+    display: table;
+}
+
+.total-percentage {
+    color: red;
+}
+.total-percentage-label {
+    height: 32px;
+}
+
+
+.columns ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.columns li {
+    margin: 0;
+    padding: 0;
+}
+
+.columns h3 {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.checkbox img {
+    cursor: pointer;
+}
+
+.mainpage-section {
+    position: relative;
+}
+
+#budgeteering-box { 
+    margin-left: -30px;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+#effects-box { margin-bottom: 140px; }
+
+.service_changes ul {
+    font-size: 14px;
+    font-weight: 500;
+    list-style: none;
+    margin-top: 30px;
+}
+.service_changes li {
+    margin-bottom: 1em;
+}
+
+.info-link {
+    color: black;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: Georgia;
+    position: absolute;
+
+    bottom: 20px;
+    right: 20px;
+}
+.info-link:hover {
+    color: #36c;
+}
+#share-box{
+    background: #fff;
+    margin-left: -30px;
+    padding-top: 20px;
+}
+
+.share-section a {
+    color: #448;
+}
+
+.share-section {
+    width: 400px;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+.share-section h3 {
+    margin-bottom: 50px;
+}
+.share-section h4 {
+    margin-bottom: 4px;
+}
+.share-section textarea {
+    width: 350px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.share-section input {
+    width: 350px;
+    border-color: #ccc;
+    border-width: 1px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.share-section .share-link{
+    padding: 6px 16px 6px 26px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    border: 0;
+    display: inline-block;
+    margin: 25px 20px 0 0;
+    width: 165px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    background-color: rgb(70, 170, 50);
+    color: #fff;
+    font-weight: 500;
+    background-image: url('../images/bg_share_icon.svg');
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 12px 50%;
+}
+.share-section .share-link:active {
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+    background-color: #346636;
+}
+.share-section .fb-button, .share-section .twitter-button{
+    height: 32px;
+    width: 32px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 1px 20px 0 0;
+    vertical-align:top;
+}
+.share-section .fb-button{
+    background-image: url('../images/social-1_logo-facebook.svg');
+}
+.share-section .twitter-button{
+    background-image: url('../images/social-1_logo-twitter.svg');
+}
+.share-section .shared-link{
+    display: inline-block;
+}
+.share-section .share-popup{
+    background-color: #ebebeb;
+    padding: 10px 10px 0 10px;
+    height: 44px;
+    margin: 15px 0 30px 0;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    position: relative;
+    white-space: nowrap;
+}
+.share-section .share-popup:before{ /* Triangle part of share-popup */
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 74px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ebebeb;
+}
+
+.share-section .sponsors{
+    position: relative;
+    margin-bottom: 40px;
+    margin-right: -20px;
+}
+
+.share-section .sponsors img{
+    height: 44px;
+    margin: 5px;
+}
+.share-section .sponsors span{
+    position: absolute;
+    right: 20px;
+    bottom: 7px;
+    text-align: right;
+    font-size: 11px;
+    color: #666;
+}
+
+.column {
+    vertical-align: top;
+    display: inline-block;
+    line-height: 150%;
+    font-size: 12px;
+}
+
+.share-section .fb-comments {
+    margin-top: 30px;
+}
+
+#area_chart {
+    position: relative;
+}
+
+.area-diagram {
+    clear: both;
+}
+
+.age-graph-end-label {
+    position: absolute;
+    left: 97%;
+    top: 182px;
+    font: 18px "Roboto";
+    font-weight: 500;
+}
+
+.age-graph-label {
+    font: 20px "Roboto";
+    font-weight: 500;
+    color: #444;
+}
+
+.age-graph-labels-upper { color: green; }
+.age-graph-labels-lower { color: red; }
+
+.age-graph-labels-upper,
+.age-graph-labels-lower {
+
+    position: relative;
+    height: 131px;
+    padding-top: 59px;
+
+    font: 18px "Roboto";
+    font-weight: 500;
+
+    padding-right: 10px;
+
+    vertical-align: top;
+    text-align: right;
+}
+
+.clear-all {
+   clear: both;
+
+}
+
+.area-diagram table {
+    border-spacing: 100px;
+    font-size: 14px;
+}
+
+.area-diagram th {
+    font-weight: 500;
+    text-align: left;
+    padding: 2px 4px;
+}
+
+.area-diagram td {
+    font-weight: normal;
+    text-align: right;
+    padding: 2px 1em;
+}
+
+/*  Json-data divs are used to embed JSON-encoded data in HTML templates.
+    They are made invisible with CSS here.
+*/
+div.json-data {
+    display:none;
+}
+
+.infodots {
+    width: 24px;
+    height: 24px;
+}
+
+.infodots-inline {
+    position: relative;
+    top: 6px;
+    margin-left: 6px;
+}
+
+.credits {
+    margin-top: 10px;
+}
+.credits a {
+    color: #448;
+}
+.forkme{
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    top: 0;
+}
+.share-section .social{
+    margin: 20px 0 30px 0;
+}
+
+.share-section .social > div.fb-like{
+    vertical-align: top;
+    margin-right: 20px;
+}
+.creative-commons{
+    white-space: nowrap;
+    overflow: visible;
+    margin-bottom: 20px;
+    line-height: 15px;
+}
+.creative-commons img{
+    margin-right: 8px;
+    vertical-align: top;
+}
+.creative-commons span{
+    margin-right: 18px;
+    line-height: 27px;
+}
+
+input[type=text], textarea {
+    padding: 4px;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+#small-screen-alert {
+    position: fixed;
+
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.2);
+    z-index: 100;
+}
+.small-screen-alert-box {
+    position: relative;
+    width: 80%;
+    height: auto;
+
+    padding: 10px 20px 20px 20px;
+    margin: 5% 10%;
+    border-radius: 3px;
+
+    font: 32px "Roboto";
+    font-weight: 500;
+
+    background: #fff;
+}
+.small-screen-alert-box button {
+
+    color: #fff;
+    background: #5cb65f;
+    border: solid rgba(255,255,255,0.15) 1px;
+    padding: 6px 16px;
+
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: normal;
+}
+
+.clear {
+    clear: both;
+}

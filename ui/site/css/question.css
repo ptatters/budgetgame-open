@@ -1,0 +1,515 @@
+.question-popup-holder {
+    position:fixed;
+    z-index: 5;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    display: none;
+    text-align: center;
+    margin: 0;
+}
+
+body {
+    position: relative;
+}
+
+.question-popup {
+    position:relative;
+    top: 0;
+    left: 0;
+    z-index: 13;
+    margin-top: 4px;
+    background-color:rgba(0,0,0,0.0);
+    display: inline-block;
+}
+
+.question-view {
+    padding: 15px 0px 0px 25px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+.question-view .left-column > p:first-of-type, .question-view .right-column > p:first-of-type{
+    font-size: 12px;
+}
+.question-popup-content {
+    position: relative;
+    margin-top: 0px;
+    display: inline-block;
+    background: white;
+    padding: 0;
+    width: 964px;
+
+    font-size: 14px;
+    line-height: 125%;
+
+    text-align: left;
+
+    box-shadow: 0 0 6px #a0a0a0;
+}
+
+
+.question-popup h5 {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+.question-popup .question-pane p {
+    margin-top: 0;
+}
+
+.question-popup th {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.question-popup h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.question-popup h4 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2078BD;
+    margin-top: 30px;
+}
+
+.question-popup h3.question-title {
+    font-size: 16px;
+    text-align: left;
+    position: absolute;
+    top: 9px;
+    left: 25px;
+}
+
+.subtitle {
+    margin-top: 5px;
+}
+
+.close-buttons {
+    display: block;
+    height: 37px;
+    border-bottom: 1px solid #C3C2C3;
+}
+
+.question-popup .close-buttons button {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 0;
+    border: 0;
+}
+@-moz-keyframes closebut_anim {
+  from {
+    text-shadow: 0 0 15px #888;
+  }
+
+  to {
+   text-shadow: 0 0 5px #ccc;
+ }
+}
+@-webkit-keyframes closebut_anim {
+  from {
+    text-shadow: 0 0 15px #888;
+  }
+
+  to {
+   text-shadow: 0 0 5px #ccc;
+ }
+}
+@keyframes closebut_anim {
+  from {
+    text-shadow: 0 0 15px #888;
+  }
+
+  to {
+   text-shadow: 0 0 5px #ccc;
+ }
+}
+
+.question-popup .close-button {
+    float: right;
+    color: #050505;
+    cursor: pointer;
+/* DISABLED CSS ANIMATION: it was taking all processing power on Chrome
+    -moz-animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -moz-animation-name: closebut_anim;
+    -webkit-animation-name: closebut_anim;
+    animation-name: closebut_anim;
+    -moz-animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+*/
+}
+.question-popup .close-button:disabled {
+    color: #999;
+}
+
+.question-popup .close-button:disabled:hover {
+    color: #999;
+    cursor: default;
+}
+
+
+.question-popup .cancel-button {
+    display: inline-block;
+    float: right;
+    background: none;
+
+    color: #666;
+}
+
+.question-popup .close-button:hover {
+    background: #ededec;
+    color: black;
+}
+
+.question-popup .cancel-button:hover {
+    background: #ededec;
+    color: black;
+}
+
+.question-popup .left-column {
+    display: inline-block;
+    vertical-align: top;
+    width:441px;
+    font-size: 12px;
+}
+
+.question-popup p {
+    font-size: 14px;
+}
+
+.question-popup .wide {
+    width: 32em;
+}
+
+.question-pane {
+}
+
+.question-popup .right-column {
+    display: inline-block;
+    vertical-align: top;
+    width: 441px;
+    margin-left: 28px;
+    font-size: 12px;
+    position:relative;
+    right:0;
+}
+
+.question-popup .infodots {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 0px;
+}
+
+
+.question-popup .options {
+    text-align: right;
+    margin-right: 40px;
+}
+
+.question-popup .options input {
+    margin-left: 1.5em;
+}
+.subquestion {
+    margin-top: 11px;
+    border-bottom: 1px solid #C3C2C3;
+    border-spacing: 0;
+    cursor: pointer;
+}
+.subquestion:last-of-type {
+    border: 0;
+}
+.subquestion:last-child {
+    margin-bottom: 48px;
+}
+.subquestion td.question-content{
+    width: 100%;
+}
+.subquestion.select-all td.checkbox{
+    padding-bottom: 4px;
+}
+
+.stack-bar-container {
+    height: 220px;
+    position: relative;
+}
+
+.stack-bar-label-cont {
+    position: absolute;
+    width: 0px;
+    left: 50%;
+    bottom: 0px;
+    color: #807F7C;
+    border-color: #807F7C;
+}
+.stack-bar-label-cont.toblack {
+    color: #000;
+    border-color: #000;
+}
+.stack-bar-label {
+    position: absolute;
+    width: auto;
+}
+.stack-bar-span {
+    margin-left: -50%;
+}
+.stack-bar-arw {
+    width: 0px;
+    margin-left: -6px;
+
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid;
+}
+.stack-bar-line {
+    margin-left: -36px;
+    height: 1px;
+    width: 72px;
+}
+.stack-bar-label-cont.toblack .stack-bar-line {
+    border-bottom: 1px solid black;
+    height: 0px;
+}
+
+.effects-chart .column0 {
+    display: none;
+}
+
+.subquestion p{
+    margin-bottom: 12px;
+}
+.stack-bar {
+    border-spacing : 0;
+    width: 36px;
+    margin: auto;
+}
+.stack-bars .label-cont {
+    position: relative;
+}
+.stack-bars .labels {
+    position:relative;
+    text-align: right;
+    width:60px;
+}
+
+.empty-space {
+    width: 50px;
+}
+
+.stack-bars .labels .label {
+    position: absolute;
+    right: 4px;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.stack-bar td {
+    padding: 0;
+}
+
+.stack-bars {
+    display: table;
+    border-spacing: 0px;
+    margin: 20px 30px 20px auto;
+}
+
+.stack-bars td {
+    vertical-align: bottom;
+}
+
+.question .left-column h4 {
+    text-align: center;
+    margin-top: 70px;
+    line-height: 125%;
+    font-size: 14px;
+}
+
+.business-as-usual-chart {
+    opacity: 0.6;
+}
+.business-as-usual-chart td.column0 .stack-bar-label-cont{
+    display: none;
+}
+
+.bar-blue {
+    background:#2b6da8;
+}
+.bar-orange {
+    background:#eb8c3a;
+}
+.bar-yellow {
+    background:#eb8c3a url(../images/stripe-pattern-yellow.png);
+    background-size: 120px;
+}
+
+.bar-light-grey {
+    /*
+    border: dashed #666;
+    border-width: 1px;
+    */
+    background: #E21D19;
+    padding: -1px;
+}
+
+.deficit {
+    width: 30px;
+    height: 30px;
+    margin: 4px 8px;
+    background: #E21D19;
+    border-radius: 2px;
+    /*
+    border: dashed #666;
+    border-width: 1px;
+    */
+    display: inline-block;
+}
+
+.no-button {
+    border-radius: 2px;
+    width: 32px;
+    height: 32px;
+    margin: 5px auto;
+    display: block;
+}
+
+
+.bar-teal-dark {
+/*    background: #00695C;
+*/    background: #757575;
+}
+.bar-teal-medium {
+/*    background: #00897B;
+*/   background: #9E9E9E;
+}
+.bar-teal-light {
+/*    background: #24A599;
+*/   background: #BDBDBD;
+}
+.bar-grey {
+    background: #BDBDBD;
+}
+
+
+.square {
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+}
+
+.bar-control {
+    border-spacing: 10px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.bar-control button:disabled {
+    color: #ccc;
+}
+
+.bar-control .percentage {
+    font-size: 18px;
+    text-align: left;
+    width: 100px;
+    padding-left: 0.5em;
+}
+
+.bar-control {
+    white-space: nowrap;
+}
+
+.bar-control .label {
+    text-align: right;
+    font-size: 14px;
+    width: 158px;
+    padding-right: 0.5em;
+}
+
+.bar-control button {
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+    margin: 4px 8px;
+    color: white;
+    text-align:center;
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: plain;
+    border: 0;
+   box-shadow: 2px 2px 4px #a0a0a0;
+}
+
+.question-group {
+    color: #666;
+    font-style: italic;
+    margin: 0;
+}
+
+.subquestion .checkbox {
+    vertical-align: top;
+    padding-right: 27px;
+}
+
+
+.subquestion .checkbox button {
+    border: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+}
+
+.subquestion .checkbox button.checked {
+    background:url(../images/bg_checkbox_ON.svg);
+    background-size: 18px 18px;
+}
+.subquestion .checkbox button.unchecked {
+    background:url(../images/bg_checkbox_OFF.svg);
+    background-size: 18px 18px;
+}
+
+.service_changes .checked {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    bottom: -4px;
+}
+
+.column-chart th {
+    border: solid #999;
+    border-width: 2px 0 0 0;
+    padding-top: 6px;
+    padding-left: 6px;
+    padding-right: 4px;
+}
+
+.column-chart th.bordering {
+    width: 80px;
+}
+
+.column-chart {
+    position: relative;
+    height: 185px;
+    margin-top: 20px;
+}
+
+
+.stack-bars {
+    position: absolute;
+    bottom: 0px;
+}
+.pre-animation{
+    position: fixed;
+    background: #fff;
+    z-index: -5;
+}
