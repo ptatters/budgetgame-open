@@ -377,8 +377,8 @@ body {
 
 .no-button {
     border-radius: 2px;
-    width: 32px;
-    height: 32px;
+    width: 22px;
+    height: 22px;
     margin: 5px auto;
     display: block;
 }
@@ -410,7 +410,7 @@ body {
 .bar-control {
     border-spacing: 10px;
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 2px;
 }
 
 .bar-control button:disabled {
