@@ -321,7 +321,7 @@ body {
 .stack-bars {
     display: table;
     border-spacing: 0px;
-    margin: 20px 30px 20px auto;
+    margin: 20px 30px 15px auto;
 }
 
 .stack-bars td {
@@ -500,7 +500,7 @@ body {
 .column-chart {
     position: relative;
     height: 185px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 

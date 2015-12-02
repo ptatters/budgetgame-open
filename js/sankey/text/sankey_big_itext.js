@@ -24,7 +24,7 @@ sankey_big_itext.prototype.position = function (dx, dy, scale) {
 	
 	var center = (self.node.svalue()*scale - self.box[3])/2;
 	var x = self.node.pos.x * scale + dx + self.node.width + self.padding;
-	var y = self.node.pos.y * scale + dy + self.fontsize*.8;
+	var y = self.node.pos.y * scale + dy + self.fontsize*.6;
 	
 	self.pos.x = x;
 	self.pos.y = y;

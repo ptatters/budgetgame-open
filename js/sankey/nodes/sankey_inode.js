@@ -21,6 +21,6 @@ sankey_inode.prototype.eval = function (nodes) {
 
 sankey_inode.prototype.overflow_value = function () { return 0; };
 sankey_inode.prototype.svalue = function () {
-	return 16000 * this.scale;
+	return 11200 * this.scale;
 };
 sankey_inode.prototype.pvalue = function () { return ''; };
