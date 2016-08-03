@@ -49,7 +49,7 @@ sankey_onode.prototype.draw = function (dx,dy, scale, nodes, icon_x) {
 
 sankey_onode.prototype.overflow_value = function () { return 0; };
 sankey_onode.prototype.svalue = function () {
-	if (this.cap && this.value() < this.cap) return this.value() * this.scale;
+	if (this.cap && Math.abs(this.value()) < this.cap) return Math.abs(this.value()) * this.scale;
 	return 80000 * this.scale;
 };
 sankey_onode.prototype.value = function () {
@@ -59,7 +59,7 @@ sankey_onode.prototype.value = function () {
 sankey_onode.prototype.draw_line = function (dx,dy,scale) {
 	var self = this;
 	// remove line
-	if (self.cap && self.value() < self.cap){
+	if (self.cap && Math.abs(self.value()) < self.cap){
 		self.icon_elem.selectAll('#sline'+self.id).data([1]).remove();
 		return self;
 	}
